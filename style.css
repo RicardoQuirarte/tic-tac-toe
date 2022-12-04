@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+* {
+    --grey: #e6ebee;
+  }
+
+body {
+    background-color: #FFFDE7;
+    display: grid;
+    place-content: center;
+    font-family: 'Nerko One', cursive;
+}
+
+h1 {
+    display: grid;
+    place-content: center;
+    color: navy;
+    font-weight: lighter;
+    font-size: 50px
+}
+
+.game-board {
+    background-color: white;
+    width: 500px;
+    height: 750px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, 125px);
+    grid-template-rows: repeat(3, 200px);
+    border-radius: 10%;
+    border: solid 1px orange;
+}
+
+.game-board:hover {
+    border: solid 2px orange;
+}
+
+.squares-one{
+    border-right: solid 4px navy;
+    border-bottom: solid 4px navy;
+}
+
+.squares-two {
+    border-bottom: solid 4px navy;
+}
+
+.squares-three {
+    border-right: solid 4px navy;
+}
+
+.squares-one:hover, .squares-two:hover, .squares-three:hover, .square-four:hover {
+    background-color: var(--grey);
+}
+
+.cat {
+    background: url(cat.svg) center/100px no-repeat;
+}
+
+.bee {
+    background-image: url(bee.svg);
+    background-position: center;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
