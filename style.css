@@ -16,7 +16,20 @@ h1 {
     place-content: center;
     color: navy;
     font-weight: lighter;
-    font-size: 50px
+    font-size: 50px;
+    border-style: double;
+    border-width: thick;
+    border-color: navy transparent orange;
+    background-color: rgb(255, 252, 246);
+    cursor: pointer;
+}
+
+h1:active {
+    transform: translateY(5px);
+}
+
+h1:hover {
+    background-color: var(--grey);
 }
 
 .game-board {
@@ -27,28 +40,16 @@ h1 {
     place-content: center;
     grid-template-columns: repeat(3, 125px);
     grid-template-rows: repeat(3, 200px);
+    gap: 5px;
     border-radius: 10%;
     border: solid 1px orange;
 }
 
-.game-board:hover {
-    border: solid 2px orange;
+.squares{
+    border: solid 4px navy;
 }
 
-.squares-one{
-    border-right: solid 4px navy;
-    border-bottom: solid 4px navy;
-}
-
-.squares-two {
-    border-bottom: solid 4px navy;
-}
-
-.squares-three {
-    border-right: solid 4px navy;
-}
-
-.squares-one:hover, .squares-two:hover, .squares-three:hover, .square-four:hover {
+.squares:hover {
     background-color: var(--grey);
 }
 
@@ -61,4 +62,21 @@ h1 {
     background-position: center;
     background-size: 100px;
     background-repeat: no-repeat;
+}
+
+input {
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+[for="playerTwo"] {
+    padding-left: 20px;
+}
+
+.congratulate {
+    color: red;
+    font-size: 40px;
+    display: grid;
+    place-content: center;
+    margin-top: 25px;
 }
