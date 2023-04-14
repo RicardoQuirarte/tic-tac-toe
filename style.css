@@ -43,6 +43,7 @@ h1:hover {
     gap: 5px;
     border-radius: 10%;
     border: solid 1px orange;
+    margin-left: 15%;
 }
 
 .squares{
@@ -55,6 +56,7 @@ h1:hover {
 
 .cat {
     background: url(cat.svg) center/100px no-repeat;
+    transition: all .7s ease-out;
 }
 
 .bee {
@@ -62,6 +64,7 @@ h1:hover {
     background-position: center;
     background-size: 100px;
     background-repeat: no-repeat;
+    transition: all .7s ease-out;
 }
 
 input {
@@ -71,6 +74,10 @@ input {
 
 [for="playerTwo"] {
     padding-left: 20px;
+}
+
+label {
+    font-size: 25px;
 }
 
 .congratulate {

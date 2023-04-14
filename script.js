@@ -1,5 +1,4 @@
 const gameboard = (() => {
-    let gameboard = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 
     const container = document.querySelector('.game-board');
 
@@ -18,21 +17,11 @@ const gameboard = (() => {
     
 })();
 
-const flowOfGame = (() => {
-    
-    
-})();
-
-const selectWinner = (() => {
-    
-    
-})();
-
 const renderBeesCats = (() => {
     const squares = document.querySelectorAll('.squares');
 
     squares.forEach ((e) => {
-        e.addEventListener('click', renderContent)
+        e.addEventListener('click', renderContent);
     });
 
     let counter = 0
@@ -46,9 +35,19 @@ const renderBeesCats = (() => {
             e.target.classList.add('cat');
         }
         counter++
-        }
+    }
 
+
+    // function renderContent(e) {
+    //     if (e.target.classList.contains('bee') || e.target.classList.contains('cat')) {
+    //         return
+    //     }else {
+    //         e.target.classList.add('cat');
+    //         let random = Math.floor(Math.random() * squares.length);
+    //         squares[random].classList.add('bee');
+    //     }
     
+
     const squareOne = document.getElementById(0);
     const squareTwo = document.getElementById(1);
     const squareThree = document.getElementById(2);
@@ -109,8 +108,3 @@ const renderBeesCats = (() => {
     window.addEventListener("click", gameOver)
 
 })();
-
-const players = () => {
-
-    
-}
